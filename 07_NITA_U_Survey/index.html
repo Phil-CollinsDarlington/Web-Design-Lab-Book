@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Uganda IT Skills Assessment</title>
+        <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <img src="uganda-coat-of-arms.png" alt="Uganda coat of arms" style="max-width:80px">
+            <h1>National Information Technology Authority — Uganda</h1>
+        </header>
+        <section class="banner">
+            <img src="survey-banner.jpg" alt="People using computers for IT skills">
+            <h2>Uganda National IT Skills Assessment 2026</h2>
+        </section>
+        <main class="container">
+            <div class="progress">
+                <div class="step current">1 — Respondent Details</div>
+                <div class="step">2 — Skills Assessment</div>
+                <div class="step">3 — Submit</div>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Respondent Details</legend>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <select id="title">
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                            <option>Ms</option>
+                            <option>Dr</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" minlength="4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" pattern="\+256[0-9]{9}" placeholder="+256700000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input id="dob" type="date">
+                    </div>
+                    <div class="form-group"><span class="field-label">Gender</span>
+                    <label class="choice">
+                        <input type="radio" name="gender"> Male</label>
+                        <label class="choice">
+                            <input type="radio" name="gender"> Female</label>
+                            <label class="choice">
+                                <input type="radio" name="gender"> Prefer not to say</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="region">Region</label>
+                                <select id="region">
+                                    <option>Central</option>
+                                    <option>Eastern</option>
+                                    <option>Northern</option>
+                                    <option>Western</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><span class="field-label">Respondent Category</span>
+                            <label class="choice">
+                                <input type="radio" name="category"> ICT Professional</label>
+                                <label class="choice">
+                                    <input type="radio" name="category"> Government Officer</label>
+                                    <label class="choice">
+                                        <input type="radio" name="category"> Student</label>
+                                    </div>
+                                    <button type="submit">Continue</button>
+                                </fieldset>
+                            </form>
+                        </main>
+                        <footer>© 2026 NITA-U</footer>
+                    </body>
+                </html>

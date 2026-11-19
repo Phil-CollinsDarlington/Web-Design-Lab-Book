@@ -1,0 +1,121 @@
+* {
+    box-sizing:border-box
+}
+body {
+    margin:0;
+    font-family:Arial;
+    color:#25364a;
+    background:#f4f6f8
+}
+.site-header {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:18px;
+    background:#002147;
+    color:white
+}
+.site-header img {
+    object-fit:contain
+}
+.site-header h1 {
+    font-size:23px
+}
+.banner {
+    height:300px;
+    position:relative;
+    overflow:hidden
+}
+.banner img {
+    width:100%;
+    height:100%;
+    object-fit:cover
+}
+.banner:after {
+    content:'';
+    position:absolute;
+    inset:0;
+    background:#00152c88
+}
+.banner h2 {
+    position:absolute;
+    z-index:1;
+    inset:0;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    color:white;
+    font-size:clamp(24px,4vw,40px);
+    padding:15px
+}
+.container {
+    max-width:850px;
+    margin:30px auto;
+    padding:0 18px
+}
+.progress {
+    display:flex;
+    gap:10px;
+    margin-bottom:25px
+}
+.step {
+    flex:1;
+    padding:13px 8px;
+    background:#e0e5ea;
+    text-align:center;
+    border-radius:5px
+}
+.step.current {
+    background:#D4AF37;
+    color:#002147;
+    font-weight:bold
+}
+fieldset {
+    border:1px solid #c4ccd4;
+    border-radius:8px;
+    background:white;
+    padding:25px
+}
+legend {
+    color:#002147;
+    font-size:21px;
+    font-weight:bold
+}
+.form-group {
+    margin:16px 0
+}
+.form-group>label,.field-label {
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold
+}
+.form-group input:not([type=radio]),.form-group select {
+    width:100%;
+    padding:11px;
+    border:1px solid #b8c3ce;
+    border-radius:4px
+}
+.choice {
+    display:inline-block;
+    margin:5px 15px 5px 0
+}
+button {
+    padding:12px 22px;
+    background:#002147;
+    color:white;
+    border:0;
+    border-radius:4px
+}
+footer {
+    margin-top:35px;
+    padding:18px;
+    text-align:center;
+    color:white;
+    background:#002147
+}
+@media(max-width:650px) {
+    .site-header,.progress {
+        flex-direction:column
+    }
+}

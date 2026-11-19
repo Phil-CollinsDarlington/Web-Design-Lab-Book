@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Personal Loan Application</title>
+        <link rel="stylesheet" href="dlac.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Stanbic Bank Uganda</h1>
+            <nav><a href="index.html">Loan Products</a><a href="personal-loan.html">Personal Loan Application</a>
+        </nav>
+    </header>
+    <main class="form-container">
+        <form>
+            <fieldset>
+                <legend>Personal Loan Application</legend>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <select id="title">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first">First Name</label>
+                    <input id="first" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="last">Last Name</label>
+                    <input id="last" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="form-group">
+                    <label for="district">District</label>
+                    <select id="district">
+                        <option>Kampala</option>
+                        <option>Wakiso</option>
+                        <option>Mukono</option>
+                        <option>Jinja</option>
+                        <option>Mbarara</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Monthly Salary (UGX)</label>
+                    <input id="salary" type="number" min="300000">
+                    <p class="eligibility" style="background:#EAF3DE;color:#27500A;padding:8px">You appear eligible for this loan.</p>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Loan Amount Requested</label>
+                    <input id="amount" type="number">
+                </div>
+                <div class="form-group">
+                    <label for="period">Repayment Period</label>
+                    <select id="period">
+                        <option>12 months</option>
+                        <option>24 months</option>
+                        <option>36 months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Loan Purpose</label>
+                    <select id="purpose">
+                        <option>School Fees</option>
+                        <option>Medical</option>
+                        <option>Home Improvement</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <label class="declaration">
+                    <input type="checkbox" required> I confirm that the information provided is accurate.</label>
+                    <button type="submit">Submit Application</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>© 2026 Stanbic Bank Uganda</footer>
+    </body>
+</html>

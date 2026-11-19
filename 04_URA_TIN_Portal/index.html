@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>URA TIN Registration</title>
+        <link rel="stylesheet" href="portal.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <img src="ura-logo.png" alt="Uganda Revenue Authority logo" height="100">
+            <h1>TIN Registration Portal</h1>
+        </header>
+        <div class="notice">Have your National ID ready before starting.</div>
+        <main class="form-container">
+            <div class="taxpayer-options">
+                <label>
+                    <input type="radio" name="type" checked> Individual Taxpayer</label>
+                    <label>
+                        <input type="radio" name="type"> Business Entity</label>
+                    </div>
+                    <form>
+                        <fieldset>
+                            <legend>Section A: Individual Taxpayer Details</legend>
+                            <div class="form-group">
+                                <label for="fullname">Full Name</label>
+                                <input id="fullname" name="fullname" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nin">NIN</label>
+                                <input id="nin" name="nin" type="text" pattern="[A-Z]{2}[A-Z0-9]{12}" minlength="14" maxlength="14" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input id="dob" name="dob" type="date">
+                            </div>
+                            <div class="form-group"><span class="field-label">Gender</span>
+                            <label class="inline">
+                                <input type="radio" name="gender" value="Male"> Male</label>
+                                <label class="inline">
+                                    <input type="radio" name="gender" value="Female"> Female</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="district">District</label>
+                                    <select id="district">
+                                        <option>Kampala</option>
+                                        <option>Wakiso</option>
+                                        <option>Mukono</option>
+                                        <option>Jinja</option>
+                                        <option>Mbarara</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" type="tel" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nid">Upload National ID</label>
+                                    <input id="nid" type="file" accept=".jpg,.pdf">
+                                </div>
+                                <button type="submit">Next</button>
+                            </fieldset>
+                        </form>
+                    </main>
+                    <footer>© 2026 Uganda Revenue Authority</footer>
+                </body>
+            </html>
